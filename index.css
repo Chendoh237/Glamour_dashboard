@@ -1,0 +1,14 @@
+/* index.css - Financials page specifics */
+
+.release-btn {
+  background: #ffdce3;
+  border: 1px solid #ffb7cf;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.release-btn:hover {
+  filter: brightness(0.98);
+}
+button#simulateRelease {
+  cursor: pointer;
+}

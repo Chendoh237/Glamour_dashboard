@@ -1,0 +1,33 @@
+/* reviews.css */
+.review-card {
+  padding: 12px;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+.stars {
+  color: #ffb400;
+  font-size: 18px;
+}
+.review-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+.resolve-btn {
+  background: #28a745;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.flag-btn {
+  background: #d93025;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}

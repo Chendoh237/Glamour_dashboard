@@ -1,0 +1,44 @@
+/* ===========================================
+   RESPONSIVE TABLE
+=========================================== */
+
+@media (max-width: 768px) {
+  .table {
+    border: 0;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tr {
+    display: block;
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 6px;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: var(--primary);
+    margin-right: 10px;
+  }
+}
+
+/* bookings.css */
+.result-card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}

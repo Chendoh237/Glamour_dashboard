@@ -1,0 +1,37 @@
+/* shops.css */
+.shop-card {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 14px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  margin-bottom: 12px;
+}
+.shop-card img {
+  width: 84px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.shop-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+.remove-shop {
+  background: #d93025;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.badge-premium {
+  background: #e9d8ff;
+  color: #4b1a8f;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-weight: 700;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin — Reviews</title>
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">GlamourAdmin</div>
+      <nav class="menu">
+        <a class="menu-item" href="index.html">Financials</a>
+        <a class="menu-item" href="bookings.html">Bookings</a>
+        <a class="menu-item" href="shops.html">Shops</a>
+        <a class="menu-item" href="services.html">Services</a>
+        <a class="menu-item" href="ads.html">Ads</a>
+        <a class="menu-item active" href="reviews.html">Reviews</a>
+      </nav>
+    </aside>
+
+    <div class="overlay"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="left">
+          <button class="hamburger">☰</button>
+          <h2 style="margin:0">Reviews</h2>
+        </div>
+        <div class="right"><input class="search-input" placeholder="Search reviews..."></div>
+      </header>
+
+      <div class="content">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <h3>Shop Reviews</h3>
+          <div>
+            <select id="filterRating">
+              <option value="all">All ratings</option>
+              <option value="5">5 stars</option>
+              <option value="4">4 stars & up</option>
+              <option value="3">3 stars & up</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="reviewsList" class="grid cols-1"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="layout.js"></script>
+<script src="reviews.js"></script>
+</body>
+</html>

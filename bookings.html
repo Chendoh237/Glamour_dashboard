@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin — Bookings</title>
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="bookings.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">GlamourAdmin</div>
+      <nav class="menu">
+        <a class="menu-item" href="index.html"><span class="icon">🏦</span> Financials</a>
+        <a class="menu-item" href="bookings.html"><span class="icon">📅</span> Bookings</a>
+        <a class="menu-item" href="shops.html"><span class="icon">🏬</span> Shops</a>
+        <a class="menu-item" href="services.html"><span class="icon">💅</span> Services</a>
+        <a class="menu-item" href="ads.html"><span class="icon">📢</span> Ads</a>
+        <a class="menu-item" href="reviews.html"><span class="icon">⭐</span> Reviews</a>
+      </nav>
+    </aside>
+
+    <div class="overlay"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="left">
+          <button class="hamburger">☰</button>
+          <h2 style="margin:0">My Bookings</h2>
+        </div>
+        <div class="right">
+          <input class="search-input" placeholder="Search bookings...">
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="card">
+          <h3>Find Bookings by Email</h3>
+          <div style="display:flex;gap:12px;margin-top:12px">
+            <input id="emailInput" placeholder="jane@example.com" style="flex:1;padding:10px;border-radius:8px;border:1px solid #ddd">
+            <button id="findBtn" style="padding:10px 14px;border-radius:8px;background:#8a0e2e;color:#fff;border:none">Find Bookings</button>
+          </div>
+        </div>
+
+        <div id="results" style="margin-top:16px"></div>
+
+      </div>
+    </div>
+  </div>
+<script src="layout.js"></script>
+<script src="bookings.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin — Financials</title>
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">GlamourAdmin</div>
+      <nav class="menu">
+        <a class="menu-item" href="index.html"><span class="icon">🏦</span> Financials</a>
+        <a class="menu-item" href="bookings.html"><span class="icon">📅</span> Bookings</a>
+        <a class="menu-item" href="shops.html"><span class="icon">🏬</span> Shops</a>
+        <a class="menu-item" href="services.html"><span class="icon">💅</span> Services</a>
+        <a class="menu-item" href="ads.html"><span class="icon">📢</span> Ads</a>
+        <a class="menu-item" href="reviews.html"><span class="icon">⭐</span> Reviews</a>
+      </nav>
+    </aside>
+
+    <div class="overlay"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="left">
+          <button class="hamburger">☰</button>
+          <h2 style="margin:0">Financials & Escrow</h2>
+        </div>
+        <div class="right">
+          <input class="search-input" placeholder="Search payouts, shops...">
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="grid cols-4">
+          <div class="card">
+            <small>Total Platform Revenue</small>
+            <h3>$106.75</h3>
+            <small>Commissions + Ad Sales</small>
+          </div>
+          <div class="card">
+            <small>Pending Payouts (Escrow)</small>
+            <h3>$38.25</h3>
+            <small>Held for shops</small>
+          </div>
+          <div class="card">
+            <small>Ready for Release</small>
+            <h3>$0.00</h3>
+            <small>Confirmed completions</small>
+          </div>
+          <div class="card">
+            <small>Ad Sales</small>
+            <h3>$100.00</h3>
+            <small>Marketing revenue</small>
+          </div>
+        </div>
+
+        <h3 style="margin-top:20px">Payout Management</h3>
+        <div class="card" style="margin-top:12px;display:flex;flex-direction:column;gap:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <strong>Gel Manicure Deluxe</strong><br>
+              <small>Shop: Polished Perfection • Total Price: $45 • Platform fee (15%): $6.75</small>
+            </div>
+            <div style="text-align:right">
+              <small>Net Payout</small>
+              <div style="font-size:20px;color:var(--primary)">$38.25</div>
+              <div style="margin-top:8px"><button class="release-btn">Release</button></div>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <input id="escrowFilter" placeholder="Filter by shop or status" style="flex:1;padding:10px;border-radius:8px;border:1px solid #ddd">
+            <button id="simulateRelease" style="padding:10px 14px;border-radius:8px;background:#8a0e2e;color:#fff;border:none">Simulate release</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<script src="layout.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

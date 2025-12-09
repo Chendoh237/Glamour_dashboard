@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin — Ads</title>
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="ads.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">GlamourAdmin</div>
+      <nav class="menu">
+        <a class="menu-item" href="index.html">Financials</a>
+        <a class="menu-item" href="bookings.html">Bookings</a>
+        <a class="menu-item" href="shops.html">Shops</a>
+        <a class="menu-item" href="services.html">Services</a>
+        <a class="menu-item active" href="ads.html">Ads</a>
+        <a class="menu-item" href="reviews.html">Reviews</a>
+      </nav>
+    </aside>
+
+    <div class="overlay"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="left">
+          <button class="hamburger">☰</button>
+          <h2 style="margin:0">Advertisement Manager</h2>
+        </div>
+        <div class="right">
+          <input class="search-input" placeholder="Search ads...">
+        </div>
+      </header>
+
+      <div class="content">
+        <div style="display:flex;justify-content:flex-end;margin-bottom:12px">
+          <button id="createAdBtn" style="padding:10px 14px;border-radius:8px;background:#8a0e2e;color:#fff;border:none">Create Ad</button>
+        </div>
+
+        <div id="adsContainer" class="grid cols-1"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="layout.js"></script>
+<script src="ads.js"></script>
+</body>
+</html>

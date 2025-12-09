@@ -1,0 +1,15 @@
+/* ===========================================
+   LOGIN PAGE RESPONSIVE
+=========================================== */
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* login.css simple style - uses minimal variables */
+body {
+  font-family: Inter, system-ui, Georgia, serif;
+}
