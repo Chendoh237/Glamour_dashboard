@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Messages</title>
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">GlamourAdmin</div>
+    <nav class="menu">
+      <a class="menu-item" href="index.html"><span class="icon">💰</span> </a>
+      <a class="menu-item" href="bookings.html"><span class="icon">📅</span> Bookings</a>
+      <a class="menu-item" href="shops.html"><span class="icon">🏬</span> Shops</a>
+      <a class="menu-item" href="services.html"><span class="icon">💅</span> Services</a>
+      <a class="menu-item" href="ads.html"><span class="icon">📢</span> Ads</a>
+      <a class="menu-item" href="reviews.html"><span class="icon">⭐</span> Reviews</a>
+      <a class="menu-item active" href="messages.html"><span class="icon">💬</span> Messages</a>
+    </nav>
+  </aside>
+
+  <div class="overlay"></div>
+
+  <!-- Main -->
+  <div class="main">
+    <header class="topbar">
+      <div class="left">
+        <button class="hamburger">☰</button>
+        <h2>Messages Center</h2>
+      </div>
+    </header>
+
+    <div class="content message-layout">
+
+      <!-- Conversation list -->
+      <div class="conversations">
+        <h3>Conversations</h3>
+
+        <div class="conversation active" onclick="loadConversation(1)">
+          <strong>Jane Doe (Client)</strong>
+          <small>Booking inquiry</small>
+          <span class="badge sms">SMS</span>
+        </div>
+
+        <div class="conversation" onclick="loadConversation(2)">
+          <strong>Polished Perfection</strong>
+          <small>Service availability</small>
+          <span class="badge whatsapp">WhatsApp</span>
+        </div>
+
+        <div class="conversation" onclick="loadConversation(3)">
+          <strong>Crown Glory</strong>
+          <small>Email response</small>
+          <span class="badge email">Email</span>
+        </div>
+      </div>
+
+      <!-- Chat area -->
+      <div class="chat-box">
+        <div class="chat-header">
+          <strong id="chatTitle">Jane Doe (Client)</strong>
+          <span class="channel">SMS</span>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+          <div class="message received">
+            Hello, I want to book a manicure tomorrow.
+          </div>
+
+          <div class="message sent">
+            Thanks Jane, checking availability with the salon.
+          </div>
+
+          <div class="message system">
+            Message forwarded to salon owner
+          </div>
+        </div>
+
+        <div class="chat-input">
+          <select id="channelSelect">
+            <option value="sms">SMS</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="email">Email</option>
+          </select>
+
+          <input type="text" id="messageInput" placeholder="Type message as admin...">
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="layout/layout.js"></script>
+<script src="messages.js"></script>
+</body>
+</html>
